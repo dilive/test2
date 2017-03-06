@@ -16,6 +16,7 @@
 		3285FABB1E6D982D00C01955 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3285FAB91E6D982D00C01955 /* LaunchScreen.storyboard */; };
 		3285FAC61E6D982D00C01955 /* testCamTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3285FAC51E6D982D00C01955 /* testCamTests.m */; };
 		3285FAD11E6D982D00C01955 /* testCamUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3285FAD01E6D982D00C01955 /* testCamUITests.m */; };
+		3295C0021E6DE2DD003F73ED /* modinit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3295C0011E6DE2DD003F73ED /* modinit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		3285FACC1E6D982D00C01955 /* testCamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testCamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3285FAD01E6D982D00C01955 /* testCamUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testCamUITests.m; sourceTree = "<group>"; };
 		3285FAD21E6D982D00C01955 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3295C0001E6DE2DD003F73ED /* modinit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = modinit.h; sourceTree = "<group>"; };
+		3295C0011E6DE2DD003F73ED /* modinit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = modinit.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,15 +106,15 @@
 		3285FAA71E6D982C00C01955 /* testCam */ = {
 			isa = PBXGroup;
 			children = (
-				3285FAAB1E6D982C00C01955 /* AppDelegate.h */,
-				3285FAAC1E6D982D00C01955 /* AppDelegate.m */,
-				3285FAAE1E6D982D00C01955 /* ViewController.h */,
-				3285FAAF1E6D982D00C01955 /* ViewController.m */,
+				3295C0031E6DED1A003F73ED /* initialization */,
+				3295C0041E6DED40003F73ED /* controller */,
 				3285FAB11E6D982D00C01955 /* Main.storyboard */,
 				3285FAB71E6D982D00C01955 /* Assets.xcassets */,
 				3285FAB91E6D982D00C01955 /* LaunchScreen.storyboard */,
 				3285FABC1E6D982D00C01955 /* Info.plist */,
 				3285FAB41E6D982D00C01955 /* testCam.xcdatamodeld */,
+				3285FAAB1E6D982C00C01955 /* AppDelegate.h */,
+				3285FAAC1E6D982D00C01955 /* AppDelegate.m */,
 				3285FAA81E6D982C00C01955 /* Supporting Files */,
 			);
 			path = testCam;
@@ -141,6 +144,24 @@
 				3285FAD21E6D982D00C01955 /* Info.plist */,
 			);
 			path = testCamUITests;
+			sourceTree = "<group>";
+		};
+		3295C0031E6DED1A003F73ED /* initialization */ = {
+			isa = PBXGroup;
+			children = (
+				3295C0001E6DE2DD003F73ED /* modinit.h */,
+				3295C0011E6DE2DD003F73ED /* modinit.m */,
+			);
+			name = initialization;
+			sourceTree = "<group>";
+		};
+		3295C0041E6DED40003F73ED /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				3285FAAE1E6D982D00C01955 /* ViewController.h */,
+				3285FAAF1E6D982D00C01955 /* ViewController.m */,
+			);
+			name = controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3285FAB01E6D982D00C01955 /* ViewController.m in Sources */,
+				3295C0021E6DE2DD003F73ED /* modinit.m in Sources */,
 				3285FAB61E6D982D00C01955 /* testCam.xcdatamodeld in Sources */,
 				3285FAAD1E6D982D00C01955 /* AppDelegate.m in Sources */,
 				3285FAAA1E6D982C00C01955 /* main.m in Sources */,
@@ -431,6 +453,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QDVV2T27JF;
 				INFOPLIST_FILE = testCam/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dilive.testCam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -443,6 +466,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QDVV2T27JF;
 				INFOPLIST_FILE = testCam/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dilive.testCam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -518,6 +542,7 @@
 				3285FAD71E6D982D00C01955 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3285FAD81E6D982D00C01955 /* Build configuration list for PBXNativeTarget "testCamTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +551,7 @@
 				3285FADA1E6D982D00C01955 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3285FADB1E6D982D00C01955 /* Build configuration list for PBXNativeTarget "testCamUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +560,7 @@
 				3285FADD1E6D982D00C01955 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

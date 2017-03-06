@@ -7,8 +7,13 @@
 //
 
 #import "ViewController.h"
+//#import <AVFoundation/AVFoundation.h>
+#import "modinit.h"
 
-@interface ViewController ()
+@interface ViewController () 
+{
+    
+}
 
 @end
 
@@ -16,9 +21,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
+    
+    UIView * vww = [[modinit alloc] streaminit:self.view.frame.size.height/2 withFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) ] ;
+    [self.view addSubview:vww];
 
+
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
