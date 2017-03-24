@@ -12,7 +12,7 @@
 @implementation modinit
 
 
-- (UIView *) streaminit : (float) tran withFrame: (CGRect) frm
++ (UIView *) streaminit : (float) tran withFrame: (CGRect) frm
 {
     UIView * view = [[UIView alloc]initWithFrame:frm];
     UIImageView * imgVwB = [[UIImageView alloc] initWithFrame:frm];
@@ -75,6 +75,12 @@ if (frontCamera) {
 }
 
 [session startRunning];
+    
+    CGRect frmBtn = CGRectMake(0, view.frame.size.height-40, view.frame.size.width, 40);
+    UIButton * butSwView2 = [[UIButton alloc] initWithFrame:frmBtn];
+    [view addSubview:butSwView2];
+  //  [butSwView2 buttonType:UIButtonTypeCustom];
+    
     
     return view;
 }

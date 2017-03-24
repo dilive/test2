@@ -11,6 +11,6 @@
 
 @interface modinit : UIView
 
-- (UIView *) streaminit : (float) tran withFrame: (CGRect) frm;
++ (UIView *) streaminit : (float) tran withFrame: (CGRect) frm;
 
 @end
