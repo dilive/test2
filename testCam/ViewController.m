@@ -25,14 +25,6 @@
     UIView * vww = [modinit streaminit:self.view.frame.size.height/2 withFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) ] ;
     [self.view addSubview:vww];
 
-//    NSArray *Arr;
-//    NSCountedSet *Nset;
-//    
-//    Arr=[NSArray arrayWithObjects:@"1",@"2",@"3",@"4",@"2",@"1", nil];
-//    Nset=[NSCountedSet setWithObjects:@"1",@"2",@"3",@"3",@"5",@"5", nil];
-//    
-//    NSLog(@"%@",Arr);
-//    NSLog(@"%@",Nset);
 }
 
 - (void)didReceiveMemoryWarning {
