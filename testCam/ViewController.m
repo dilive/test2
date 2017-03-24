@@ -2,12 +2,10 @@
 //  ViewController.m
 //  testCam
 //
-//  Created by Яна и Папа on 06.03.17.
-//  Copyright © 2017 Яна и Папа. All rights reserved.
 //
 
 #import "ViewController.h"
-//#import <AVFoundation/AVFoundation.h>
+#import <AVFoundation/AVFoundation.h>
 #import "modinit.h"
 
 @interface ViewController () 
